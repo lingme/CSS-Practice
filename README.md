@@ -1,4 +1,4 @@
-# CSS_Practice
+# CSS Animeation Practice
 
 
 ### 1.Snake Border Animation
