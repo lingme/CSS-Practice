@@ -3,4 +3,4 @@
 
 ### 1.Snake Border Animation
 
-![hello](./demo_gif.gif)
+![hello](./1.SnakeBorderAnimation/demo_gif.gif)
