@@ -1,2 +1,6 @@
 # CSS_Practice
-Practice css technology
+
+
+### 1.Snake Border Animation
+
+![hello](./demo_gif.gif)
