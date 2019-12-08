@@ -21,15 +21,14 @@ a{
     overflow: hidden;
 }
 
-a:before
-{
+a:before{
     content: ' ';
     position: absolute;
     top: 2px;
     left: 2px;
     bottom: 2px;
     width: 50%;
-    background: rgba(255, 255, 255, 0,05);
+    background: rgba(255, 255, 255, .05);
 }
 
 a span:nth-child(1)
