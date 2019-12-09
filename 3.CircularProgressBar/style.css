@@ -29,14 +29,14 @@ body{
     justify-content: center;
     align-items: center;
     height: 300px;
-    border-radius: 15px;
+    border-radius: 10px;
     text-align: center;
     overflow: hidden;
     transition: 0.5s;
 }
 
 .container .card:hover{
-    transform: translateY(-10px);
+    transform: translateY(-25px);
     box-shadow: 0 15px 35px rgba(0, 0, 0, .5);
 }
 
