@@ -83,7 +83,13 @@ body{
     text-align: center;
     line-height: 46px;
     color: #00deff;
+    display: none;
     font-size: 24px;
     font-weight: 700;
     user-select: none;
+}
+
+#box span:nth-child(1)
+{
+    display: inline;
 }

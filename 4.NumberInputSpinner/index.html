@@ -8,15 +8,34 @@
 
     <body>
        <div class="container">
-           <span class="next"></span>
-           <span class="prev"></span>
-            <div id="box">
-                <span>0</span>
-            </div>
+           <span class="next" onclick=nextNum()></span>
+           <span class="prev" onclick=PreNum()></span>
+            <div id="box"></div>
        </div>
 
        <script type="text/javascript">
-        var Number = document.getElementById('box')
+        
+        var number = document.getElementById('box');
+        for (let index = 0; index < 100; index++) {
+            var span = document.createElement('span');
+            span.textContent = index;
+            number.appendChild(span); 
+        }
+
+        var num = number.getElementsByTagName('span');
+        var index = 0;
+        
+        function nextNum(){
+            num[index].style.display = 'none';
+            index = (index+1) % num.length;
+            num[index].style.display = 'initial';
+        }
+
+        function PreNum(){
+            num[index].style.display = 'none';
+            index = (index-1 + num.length) % num.length;
+            num[index].style.display = 'initial';
+        }
        </script>
     </body>
 </html>
