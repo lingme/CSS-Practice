@@ -43,4 +43,47 @@ body{
     transform: translateY(-50%) rotate(135deg);
     cursor: pointer;
     opacity: 0;
+    transition: 0.5s;
+}
+
+.container:hover .next
+{
+    opacity: 1;
+    right: 20px;
+}
+
+.container .prev{
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    z-index: 1;
+    transform: translateY(-50%) rotate(315deg);
+    cursor: pointer;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.container:hover .prev
+{
+    opacity: 1;
+    left: 20px;
+}
+
+#box span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 46px;
+    color: #00deff;
+    font-size: 24px;
+    font-weight: 700;
+    user-select: none;
 }
