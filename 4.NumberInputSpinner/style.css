@@ -21,5 +21,26 @@ body{
     height: 50px;
     border-radius: 40px;
     border: 2px solid rgba(255, 255, 255, .2);
-    transition: 0.5s;
+    transition: 0.5s ;
+}
+
+.container:hover
+{
+    width: 120px;
+    border: 2px solid rgba(255, 255, 255, 1);
+}
+
+.container .next{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    z-index: 1;
+    transform: translateY(-50%) rotate(135deg);
+    cursor: pointer;
+    opacity: 0;
 }
