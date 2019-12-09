@@ -5,8 +5,35 @@
     font-family: 'Roboto', sans-serif;
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:#101010;
+}
+
+.container
+{
+    position: relative;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;   
+}
+
+.container .card{
+    position: relative;
+    width: 250px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
 svg{
     position: relative;
+    padding-top: 30px;
     width: 150px;
     height: 150px;
     z-index: 1000;
@@ -44,3 +71,4 @@ svg circle:nth-child(2)
 {
     stroke: #ff04f3;
 }
+
