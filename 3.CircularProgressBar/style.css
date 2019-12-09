@@ -98,6 +98,22 @@ body{
     color: #fff;
 }
 
+.text{
+    position: relative;
+    margin-top: 35px;
+    color: #777;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.card:hover .text{
+    color: #fff;
+
+}
+
 svg{
     position: relative;
     width: 150px;
@@ -117,24 +133,27 @@ svg circle{
 
 svg circle:nth-child(2)
 {
-    stroke-dasharray: 220;
-    stroke-dashoffset: 220;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
 }
 
 .card:nth-child(1) svg circle:nth-child(2)
 {
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
     stroke: #00ff43;
 }
 
 
 .card:nth-child(2) svg circle:nth-child(2)
 {
+    stroke-dashoffset: calc(440 - (440 * 70) / 100);
     stroke: #00a1ff;
 }
 
 
 .card:nth-child(3) svg circle:nth-child(2)
 {
+    stroke-dashoffset: calc(440 - (440 * 50) / 100);
     stroke: #ff04f3;
 }
 
