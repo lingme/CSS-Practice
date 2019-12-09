@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
 
 
 *{
@@ -29,11 +29,15 @@ body{
     justify-content: center;
     align-items: center;
     height: 300px;
+    border-radius: 15px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 svg{
     position: relative;
-    padding-top: 30px;
+    padding-top: 35px;
     width: 150px;
     height: 150px;
     z-index: 1000;
