@@ -1,0 +1,23 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(#303030, #0f0f0f);
+}
+
+.container{
+    position: relative;
+    width: 360px;
+    height: 640px;
+    background: rgba(0, 0, 0, .2);
+    transform:rotate(-30deg) skew(25deg) scale(0.8);
+}
+
+.container img{
+    position: absolute;
+    width: 100%;
+}

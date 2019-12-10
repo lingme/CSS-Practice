@@ -9,8 +9,23 @@
 
 <body>
     <div class="container">
-        <img src="" class="">
+        <img src="app_design.png" class="layer" data-speed="40">
+        <img src="app_design.png" class="layer" data-speed="30">
+        <img src="app_design.png" class="layer" data-speed="20">
+        <img src="app_design.png" class="layer" data-speed="10">
     </div>
+
+    <script type="text/javascript">
+    document.addEventListener('mousemove')
+    function parallax(e)
+    {
+        this.querySelectorAll('.layer').array.forEach(element => {
+            var speed = element.getAttribute('data-speed')
+
+            var x = 
+        });
+    }
+    </script>
 </body>
 
 </html>
