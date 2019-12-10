@@ -14,7 +14,7 @@ body{
     width: 600px;
     height: 1194px;
     background: rgba(0, 0, 0, .2);
-    transform:rotate(-30deg) skew(25deg) scale(0.5);
+    transform:rotate(-30deg) skew(25deg) scale(0.2);
 }
 
 .container img{
