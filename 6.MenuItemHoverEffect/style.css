@@ -29,7 +29,7 @@ ul li{
 
 ul li a{
     position: relative;
-    /* color: transparent; */
+    color: transparent;
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
