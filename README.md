@@ -21,3 +21,7 @@
 
 ### 5.Layered Image Parallax Effect
 ![hello](./5.LayeredImageParallaxEffect/demo_gif.gif)
+
+
+### 6.Menu Item Hover Effect
+![hello](./6.MenuItemHoverEffect/demo_gif.gif)
