@@ -16,13 +16,16 @@
     </div>
 
     <script type="text/javascript">
-    document.addEventListener('mousemove')
+    document.addEventListener('mousemove', parallax);
     function parallax(e)
     {
-        this.querySelectorAll('.layer').array.forEach(element => {
+        document.querySelectorAll('.layer').forEach(element => {
             var speed = element.getAttribute('data-speed')
 
-            var x = 
+            var x = (window.innerWidth - e.pageX * speed) /250
+            var y = (window.innerHeight - e.pageX * speed) / 250
+
+            element.style.transform = `translate(${-x}px) translateY(${y}px)`
         });
     }
     </script>
