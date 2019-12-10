@@ -17,3 +17,7 @@
 
 ### 4.Number Input Spinner
 ![hello](./4.NumberInputSpinner/demo_gif.gif)
+
+
+### 5.Layered Image Parallax Effect
+![hello](./5.LayeredImageParallaxEffect/demo_gif.gif)
