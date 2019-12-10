@@ -25,11 +25,11 @@ ul {
 ul li{
   list-style: none;   
   transition: 0.5s;
-
 }
 
 ul li a{
     position: relative;
+    /* color: transparent; */
     text-decoration: none;
     text-transform: uppercase;
     font-weight: 900;
@@ -49,4 +49,34 @@ ul li a:before{
     height: 100%;
     padding: 0 10px;
     -webkit-text-stroke:1px #eee ;
+    transform: translateX(0);
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+ul li a:hover:before
+{
+    transform: translateX(100%);
+    opacity: 0;
+}
+
+ul li a:after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    /* -webkit-text-stroke:1px #eee ; */
+    transform: translateX(-100%);
+    transition: 0.5s;
+    opacity: 0;
+    pointer-events: none;
+}
+
+ul li a:hover:after
+{
+    transform: translateX(0);
+    opacity: 1;
 }
