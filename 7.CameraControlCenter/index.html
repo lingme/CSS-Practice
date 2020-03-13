@@ -12,8 +12,9 @@
 
 <body>
     <div id="components-demo">
-        <button-counter></button-counter>
-      </div>
+        <button-counter v-for="post in posts" v-bind:id="post.id" v-bind:name="post.name"></button-counter>
+    </div>
 </body>
-<script src='js/default.js'></script>
+<script src='js/render.js'></script>
+
 </html>
