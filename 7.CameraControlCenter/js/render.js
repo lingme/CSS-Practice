@@ -9,7 +9,7 @@ window.onload = () => {
     for (let index = 0; index < 60; index++) {
         var item = {
             id: index,
-            name: index.toString()
+            name: index.toString().l
         }
         posts.push(item);
     }
