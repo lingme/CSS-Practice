@@ -1,17 +1,21 @@
 Vue.component('button-counter', {
-    props: ['id', 'name'],
-    template: '<button>{{ name }}</button>'
+    props: ['id', 'name', 'status'],
+    template: '<button class="btn">{{ name }}{{ status }}</button>'
 })
 
 const posts = [];
 
+function PrefixZero(num, n) {
+    return (Array(n).join(0) + num).slice(-n);
+}
+
 window.onload = () => {
-    for (let index = 0; index < 60; index++) {
-        var item = {
+    for (let index = 1; index <= 60; index++) {
+        posts.push({
             id: index,
-            name: index.toString().l
-        }
-        posts.push(item);
+            name: "主机" + PrefixZero(index, 2),
+            status: Math.floor(Math.random() * 100) % 4
+        });
     }
 }
 

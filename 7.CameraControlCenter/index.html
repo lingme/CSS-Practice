@@ -4,15 +4,16 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Camera Control Center</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Camera Control Center</title>
     <link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 </head>
 
 <body>
-    <div id="components-demo">
-        <button-counter v-for="post in posts" v-bind:id="post.id" v-bind:name="post.name"></button-counter>
+    <div id="components-demo" class="background-img">
+        <button-counter v-for="post in posts" v-bind:id="post.id" v-bind:name="post.name" v-bind:status="post.status">
+        </button-counter>
     </div>
 </body>
 <script src='js/render.js'></script>
