@@ -25,3 +25,6 @@
 
 ### 6.Menu Item Hover Effect
 ![hello](./6.MenuItemHoverEffect/demo_gif.gif)
+
+### 7.Animate Login Page
+![hello](./7.AnimateLoginPage/1.png)
